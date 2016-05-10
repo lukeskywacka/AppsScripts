@@ -39,6 +39,7 @@ function cellModifier() {
       change_range.setBackground("White"); //function will accept color names or their hex equivilent
       change_range.setFontStyle("italic"); //normal, bold, italic
       change_range.setFontColor("#d3d3d3");} //names and hexidecimal
+      continue;
     //change_range.setFontLine("line-through")}
     
     //Settings for "In Progress" items
@@ -47,6 +48,7 @@ function cellModifier() {
       change_range.setBackground("#f6f0ba");
       change_range.setFontStyle("normal");
       change_range.setFontColor("Black");}
+      continue;
     
     //Settings for "For Sale" items
     if (cell2test.getValue() == "For Sale") {
@@ -54,6 +56,7 @@ function cellModifier() {
       change_range.setBackground("#97e197");
       change_range.setFontStyle("normal");
       change_range.setFontColor("Black");}
+      continue;
     
     //Settings for "Rented" items
     if (cell2test.getValue() == "Rented") {
@@ -61,6 +64,7 @@ function cellModifier() {
       change_range.setBackground("#add8e6");
       change_range.setFontStyle("normal");
       change_range.setFontColor("Black");}
+      continue;
    
     //Settings for "Liquidated" items
     if (cell2test.getValue() == "Liquidated") {
@@ -69,6 +73,7 @@ function cellModifier() {
       change_range.setFontStyle("italic"); 
       change_range.setFontColor("#d3d3d3");} 
       //change_range.setFontLine("line-through")}
+      continue;
     
     //Settings for "Unlocking" items
     if (cell2test.getValue() == "Unlocking") {
@@ -76,6 +81,7 @@ function cellModifier() {
       change_range.setBackground("#ff7f7f");
       change_range.setFontStyle("normal");
       change_range.setFontColor("Black");}
+      continue;
     
     
     active_row++ ;} //close while loop - iterates the 'active_row' variable
@@ -83,6 +89,7 @@ function cellModifier() {
 
 // This function will write and erase data from first sheet to the second sheet based on statuses from first sheet.
 // The goal here was to make a "For Sale" sheet which could be published and embedded
+// It currently Works very well with one client. 
 
 function copypasta() {
   
@@ -133,4 +140,15 @@ function copypasta() {
     
   active_row1++; }
 }
+    
+
   
+    
+    
+    
+    
+    
+    
+    
+    
+    
